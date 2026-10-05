@@ -1,0 +1,62 @@
+/**
+ * Dados de demonstração (FICTÍCIOS): artesãs e peças.
+ * Em produção estes dados viriam de uma planilha/API administrada pela Sofia.
+ * `paleta` alimenta a ilustração em retalhos gerada em js/art.js.
+ */
+window.ECOMODA_DATA = {
+  artesas: [
+    { id: "maria", nome: "Maria das Graças", idade: 52, anos: 6, especialidade: "Bolsas e necessaires",
+      bio: "Costureira desde os 15 anos, voltou ao mercado de trabalho pelo programa de capacitação do Instituto. Hoje lidera a oficina de bolsas." },
+    { id: "joana", nome: "Joana Pereira", idade: 38, anos: 3, especialidade: "Blusas e camisetas",
+      bio: "Mãe solo de dois filhos, encontrou no upcycling renda fixa e flexibilidade para cuidar da família." },
+    { id: "luzia", nome: "Luzia Ferreira", idade: 61, anos: 7, especialidade: "Patchwork e colchas",
+      bio: "Aprendeu patchwork com a avó. Ensina a técnica às novas integrantes da equipe." },
+    { id: "rosana", nome: "Rosana Lima", idade: 44, anos: 2, especialidade: "Saias e vestidos",
+      bio: "Ex-operadora de fábrica têxtil. Cuida do corte e do acabamento das peças maiores." },
+    { id: "tereza", nome: "Tereza Almeida", idade: 47, anos: 4, especialidade: "Acessórios",
+      bio: "Criadora das faixas e turbantes. Transforma sobras de tecidos finos em peças delicadas." },
+    { id: "aparecida", nome: "Aparecida Nunes", idade: 55, anos: 5, especialidade: "Coletes e jaquetas",
+      bio: "Especialista em jeans e sarja. Faz o acabamento mais resistente da casa." },
+  ],
+
+  categorias: ["Bolsas", "Roupas", "Acessórios"],
+
+  pecas: [
+    { id: "EM-001", nome: "Bolsa Tote Retalhos Jeans", forma: "tote", categoria: "Bolsas", preco: 129, artesa: "maria",
+      tecido: "Jeans descartado de uma confecção parceira em Curitiba", kg: 0.8, horas: 5, parteArtesa: 0.45,
+      paleta: ["#27425e", "#3d6a94", "#7fa3c2", "#b5532e"], desc: "Alça reforçada, forro de algodão cru e bolso interno. Cada retalho é único." },
+    { id: "EM-002", nome: "Blusa Cropped Estampas Mistas", forma: "blusa", categoria: "Roupas", preco: 89, artesa: "joana",
+      tecido: "Sobras de viscose estampada de ateliê de moda local", kg: 0.3, horas: 3, parteArtesa: 0.45,
+      paleta: ["#d9a441", "#b5532e", "#2f4a3a", "#f1e2c4"], desc: "Modelagem solta, ideal para o verão. Tamanho único (P/M)." },
+    { id: "EM-003", nome: "Saia Midi Patchwork", forma: "saia", categoria: "Roupas", preco: 169, artesa: "rosana",
+      tecido: "Retalhos de algodão e linho de coleções antigas", kg: 1.1, horas: 7, parteArtesa: 0.45,
+      paleta: ["#8a3b2a", "#d9a441", "#4a6b55", "#e8d9bd"], desc: "Cós com elástico e bolsos laterais. Comprimento 78 cm." },
+    { id: "EM-004", nome: "Necessaire Zíper Colorido", forma: "necessaire", categoria: "Acessórios", preco: 49, artesa: "maria",
+      tecido: "Sobras de lona e tricoline", kg: 0.15, horas: 1.5, parteArtesa: 0.45,
+      paleta: ["#b5532e", "#2f4a3a", "#d9a441", "#f6f0e6"], desc: "Forrada e impermeabilizada, cabe maquiagem, escova e muito mais." },
+    { id: "EM-005", nome: "Faixa de Cabelo Turbante", forma: "faixa", categoria: "Acessórios", preco: 39, artesa: "tereza",
+      tecido: "Retalhos de seda e cetim de ateliê de noivas", kg: 0.08, horas: 1, parteArtesa: 0.45,
+      paleta: ["#b5532e", "#d9a441", "#7a2e3a", "#f1e2c4"], desc: "Com fio de arame interno, modela do jeito que você quiser." },
+    { id: "EM-006", nome: "Colete Jeans Reciclado", forma: "colete", categoria: "Roupas", preco: 199, artesa: "aparecida",
+      tecido: "Calças jeans de doação, desmontadas e recompostas", kg: 1.4, horas: 9, parteArtesa: 0.45,
+      paleta: ["#1f3550", "#3d6a94", "#6b8fb0", "#c9d6e2"], desc: "Costura dupla, botões de coco. Unissex, veste P a G." },
+    { id: "EM-007", nome: "Bolsa Transversal Sarja", forma: "tote", categoria: "Bolsas", preco: 109, artesa: "aparecida",
+      tecido: "Sarja de uniformes descontinuados", kg: 0.6, horas: 4, parteArtesa: 0.45,
+      paleta: ["#4a6b55", "#2f4a3a", "#d9a441", "#8a8a6a"], desc: "Alça regulável e fecho magnético. Resistente ao dia a dia." },
+    { id: "EM-008", nome: "Blusa Manga Bufante", forma: "blusa", categoria: "Roupas", preco: 119, artesa: "joana",
+      tecido: "Voal e algodão de fim de coleção", kg: 0.4, horas: 4, parteArtesa: 0.45,
+      paleta: ["#f1e2c4", "#d9a441", "#b5532e", "#4a6b55"], desc: "Manga bufante com punho em elástico. Tamanho único (M/G)." },
+    { id: "EM-009", nome: "Vestido Colcha de Retalhos", forma: "saia", categoria: "Roupas", preco: 249, artesa: "luzia",
+      tecido: "Colchas e lençóis de algodão doados", kg: 1.8, horas: 12, parteArtesa: 0.45,
+      paleta: ["#7a2e3a", "#d9a441", "#2f4a3a", "#f6f0e6"], desc: "Patchwork feito à mão pela mestra Luzia. Peça de colecionador." },
+    { id: "EM-010", nome: "Turbante Estampado", forma: "faixa", categoria: "Acessórios", preco: 45, artesa: "tereza",
+      tecido: "Sobras de estampas africanas de loja parceira", kg: 0.1, horas: 1, parteArtesa: 0.45,
+      paleta: ["#d9a441", "#2f4a3a", "#b5532e", "#231f1b"], desc: "Faixa larga que pode ser amarrada de vários jeitos." },
+    { id: "EM-011", nome: "Necessaire Mini Jeans", forma: "necessaire", categoria: "Acessórios", preco: 35, artesa: "maria",
+      tecido: "Barras de calça jeans", kg: 0.1, horas: 1, parteArtesa: 0.45,
+      paleta: ["#27425e", "#3d6a94", "#7fa3c2", "#d9a441"], desc: "Perfeita para fones, moedas e batom." },
+    { id: "EM-012", nome: "Bolsa Sacola Linho Cru", forma: "tote", categoria: "Bolsas", preco: 139, artesa: "luzia",
+      tecido: "Linho e algodão cru de cortinas descartadas", kg: 0.9, horas: 6, parteArtesa: 0.45,
+      paleta: ["#e8d9bd", "#c9ae7c", "#8a3b2a", "#4a6b55"], desc: "Bordado manual com sobras de linha. Capacidade para notebook de 14\"." },
+  ],
+};

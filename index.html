@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto EcoModa · moda sustentável com rastreabilidade</title>
+  <meta name="description" content="Moda autoral de upcycling feita por mulheres artesãs. Cada peça é única, com a história de quem fez e o impacto real da sua compra.">
+  <meta name="theme-color" content="#2f4a3a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f4a3a'/%3E%3Cpath d='M8 22c0-8 6-12 16-12-1 9-5 14-13 14' fill='%23d9a441'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Pular para o conteúdo</a>
+
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="#/" aria-label="Instituto EcoModa, página inicial">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2f4a3a"/><path d="M8 22c0-8 6-12 16-12-1 9-5 14-13 14" fill="#d9a441"/></svg>
+        <span>EcoModa<small>Instituto</small></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#/" data-nav="loja">Loja</a>
+        <a href="#/painel" data-nav="painel">Painel da Sofia</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span id="cartCount" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <p><strong>Instituto EcoModa Sustentável</strong><br>Upcycling · trabalho digno · rastreabilidade.</p>
+      <p class="small">Projeto acadêmico de demonstração (Design Profissional). Peças, artesãs e chave PIX fictícias.<br>© <span id="year"></span> · Código sob licença MIT.</p>
+    </div>
+  </footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Carrinho">
+    <div class="drawer-head"><h2>Seu carrinho</h2><button class="x" id="drawerClose" aria-label="Fechar carrinho">×</button></div>
+    <div id="cartBody"></div>
+  </aside>
+
+  <dialog id="modal" aria-labelledby="modal-title">
+    <button class="x" id="modalClose" aria-label="Fechar">×</button>
+    <div class="m-grid" id="modal-body"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p style="padding:2rem">Este site precisa de JavaScript para funcionar.</p></noscript>
+  <script src="js/vendor/qr.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/pix.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
